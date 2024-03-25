@@ -6,19 +6,8 @@
 
 "use strict"
 
-/**
- * This function calculates area of a triangle.
- */
-function calculatePermeterAndAreaOfRectangle() {
-  // input
-  const lengthOfRectangle = parseInt(document.getElementById('length-of-rectangle').value)
-  const heightOfRectangle = parseInt(document.getElementById('width-of-rectangle').value)
-
-  // process
-  const areaOfRectangle = lengthOfRectangle * heightOfRectangle
-  const perimeterOfRectangle = (lengthOfRectangle + heightOfRectangle) * 2
-
-  // output
-  document.getElementById('area').innerHTML = 'Area is: ' + areaOfRectangle + ' cm²'
-  document.getElementById('perimeter').innerHTML = 'Perimeter is: ' + perimeterOfRectangle + ' cm'
+function enterClicked() {
+ const firstName = document.getElementById("first-name").value
+ const userAge = parseInt(document.getElementById("age-entered").value)
+ document.getElementById("answer").innerHTML = "Your info is: " + firstName + ", age " + userAge + "."
 }
