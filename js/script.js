@@ -6,8 +6,8 @@
 
 "use strict"
 
-function enterClicked() {
- const firstName = document.getElementById("first-name").value
- const userAge = parseInt(document.getElementById("age-entered").value)
- document.getElementById("answer").innerHTML = "Your info is: " + firstName + ", age " + userAge + "."
+function findAreaClicked() {
+  const baseInput = parseInt(document.getElementById("length-of-rectangle").value)
+  const heightInput = parseInt(document.getElementById("width-of-rectangle").value)
+  document.getElementById("answer").innerHTML = "The area is: " + (baseInput * heightInput) / 2 + " cm<sup>2"
 }
